@@ -1,0 +1,49 @@
+<div class="container">
+	
+	<div class="row">
+		<div class="col-sm-7">
+			<br>
+			<img src="./images/logo.jpg" alt="Service Request App">
+		</div>
+		<div class="col-sm-5">
+			<br/><br/>
+            <h3><b>Service Maintenance Request Tracker</b></h3>
+            <p><i>by Kaushik Devulapalli</i></p>
+			<p class="right"><a href="/admin">Admin</a>  |  <a href="/usercrud">Activity</a>  |  <a href="/crud">Assign Request<a/>  |  <a href="/checkout">User Checkout Request</a></p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<form action="/crud" method="POST" class="form-horizontal">
+			<div class="container">
+				<div class="container col-sm-12"><br>
+					<h2>Create Request</h2>
+					<br>
+					<div class="col-sm-12"><label>Service Name</label>
+					<input class="form-control" name="sname" type="text" placeholder="Service Name"></div>
+					<div class="col-sm-12"><label>Request Details</label>
+					<input class="form-control" name="details" type="text" placeholder="Request Details"></div>
+					<div class="col-sm-12"><label>Request Number</label>
+					<input class="form-control" name="rNumber" type="text" placeholder="Request Number"></div>
+					<div class="col-sm-12"><label>Apartment Number</label>
+					<input class="form-control" name="aNumber" type="text" placeholder="Apartment Number"></div>
+					<div class="col-sm-12"><label>Assigned To</label>
+					<input class="form-control" name="Assigned" type="text" placeholder="Assigned To"></div>
+					
+				</div>
+				<br>
+				<div class="form-group1">
+					<div class="col-md-12 admin-center">
+						<br>
+						<br>
+						<button class="btn btn-success" type="Submit">Submit</button>
+						
+					</div>
+				</div>
+			</div>
+		</form>
+		<hr>
+	</div>
+	
+</div>
+<BR><BR>

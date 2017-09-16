@@ -1,0 +1,100 @@
+{{!-- Client: side page, All content stored in container --}}
+<div class="container">
+  {{!-- Row for columns --}}
+  <div class="row">
+    {{!-- Stores logo, Columns 7/12  --}}
+    <div class="col-sm-7">
+      <br>
+      {{!-- Northwestern Logo --}}
+      <img src="./images/logo.jpg" alt="Service Tracker App">
+    </div>
+    {{!-- Title --}}
+    <div class="col-sm-5">
+      <div class="title">
+        <br/><br/>
+        <h3><b>Service Maintenance Request Tracker</b></h3>
+        <p><i>by Kaushik Devulapalli</i></p>
+      </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  {{!-- Row for books avaible and email input content --}}
+  <div class="row">
+    {{!-- container for columns --}}
+    <div class="container">
+      {{!-- 8/12 columns --}}
+      <div class="container col-sm-8">
+        {{!-- Table DIV outputting books from mysql database --}}
+        <div class="booksTable">
+          <h2>Service Requests</h2>
+          
+          <hr>
+          
+          {{!-- Table  --}}
+          <table class="table table-hover">
+            {{!-- Table head --}}
+            <thead>
+              <tr>
+                <th>Service Request ID</th>
+                <th>Request Details</th>
+                <th>Request Number</th>
+                <th>Apartment Number</th>
+                <th>Assigned to</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            {{!-- Loops data into table rows --}}
+            <tbody>
+              {{#each services}}
+              <tr tabindex="1">
+                <td>{{this.service_name}}</td>
+                <td>{{this.request_details}}</td>
+                <td>{{this.request_number}}</td>
+                <td>{{this.apartment_number}}</td>
+                <td>{{this.assigned_to}}</td>
+                <td>{{this.status}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      {{!-- 4/12 columns span --}}
+      <div class="container col-sm-4">
+        {{!-- email books div --}}
+        <div class="emailBooks">
+          <h2>Service Request</h2>
+          <hr>
+          
+          <p>If you would like to create a maintenance request, please fill out this form. Your request will be processed shortly 
+          </p>
+          <br>
+          {{!-- Emails to Lease office --}}
+          <form action="mailto:kaushik145@gmail.com" method="post" enctype="text/plain">
+            {{!-- name input box --}}
+            Name:  <input type="text" name="Name:" size="25" placeholder="full name"><br><br>
+            {{!-- email input box --}}
+            <div class="row requiredRow">
+              <label for="email" id="email-ariaLabel">Email:   </label>
+              <input id="email" name="email" type="email" class="required" size="20" title="This is a required field" placeholder="email"/>
+            </div>
+            <br>
+            {{!-- request box --}}
+            <b>Request:</b>  <input type="text" name="Book Request" size="40" placeholder="Service Request Details"><br><br>
+            {{!-- submit button --}}
+            <div class="input-append">
+              <button class="btn btn-success" onclick="location.href='mailto:kaushik145@gmail.com';">Submit</button>
+            </div>
+            <br>
+            {{!-- reset button --}}
+            <button class="btn btn-danger" type="reset" value="Reset">Reset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

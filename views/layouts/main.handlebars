@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Service Maintenance Request Tracker</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/smrtracker_style.css" type="text/css" />
+        <link rel="stylesheet" href="/javascript.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+            // Email validation for index form
+            $('form input[name="email"]').blur(function () {
+                console.log("This is valid email")
+                // following characters required for valid email 
+                var email = $(this).val();
+                var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+                if (re.test(email)) {
+                    $('.msg').hide();
+                    $('.success').show();
+                } else {
+                    $('.msg').hide();
+                    $('.error').show();
+                }
+
+            });
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen|Poppins" rel="stylesheet">
+    </head>
+    <body>
+        <img src="./images/Background Image_2.jpg" style="height:400px; width:2200px">
+        {{{ body }}}
+        <footer class="footer">
+            <p style="text-align:center">© Copyright 2017 Kaushik Devulapalli</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        // Email validation
+        $('form input[name="email"]').blur(function () {
+        
+        var email = $(this).val();
+        var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+        if (re.test(email)) {
+        $('.msg').hide();
+        $('.success').show();
+        } else {
+        $('.msg').hide();
+        $('.error').show();
+        }
+        });
+        </script>
+        <script type="text/javascript" src="/javascript.js"></script>
+    </body>
+</html>
+

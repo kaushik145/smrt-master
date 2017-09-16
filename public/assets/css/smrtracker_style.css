@@ -1,0 +1,159 @@
+@media screen and (min-width:400px) {
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> linh
+
+.title {
+
+  font-family: 'Oxygen', sans-serif;
+  color:#4B0082;
+}
+
+
+.table-hover{
+
+  text-align: left;
+
+}
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Darryl
+>>>>>>> linh
+.booksTable {
+  float:left;
+  align-content:center;
+  width:100%; 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> linh
+  height: 550px;
+  width: 800px;
+  overflow: auto;
+  text-align:center; 
+  font-family: 'Oxygen', sans-serif; 
+  overflow: scroll;
+  }
+<<<<<<< HEAD
+=======
+=======
+  height: 600px;
+  width: 800px;
+  overflow: auto;
+  text-align:center;
+
+}
+
+hr { 
+    /* display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    border-color: black; */
+>>>>>>> Darryl
+>>>>>>> linh
+}
+
+.table-nonfluid {
+   width: 93% !important
+}
+
+.scroll {
+  clear: both;
+	height: 350px;
+	overflow: auto;	
+}
+
+.emailBooks {
+  border:1px;
+  border-color:#CCC;
+  height:500px;
+  margin-left: 100px;
+  width:300px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> linh
+  font-family: 'Oxygen', sans-serif;
+
+}
+
+.requiredRow {
+  margin-left: 0px;
+}
+
+
+<<<<<<< HEAD
+=======
+=======
+
+}
+
+>>>>>>> Darryl
+>>>>>>> linh
+.footer{
+/*     align-content:center;
+    width:100%;
+    float:left;
+    position:fixed;
+    bottom:0px;
+    left:50%;
+    margin-left:-200px; /*negative half the width 
+    width:400px;
+    height:50px;
+    text-align:center;
+    text-orientation:fixed;
+    background-color:red;
+    border:2px solid black; 
+    margin-top:10px; */
+<<<<<<< HEAD
+    margin-left: 600px;
+=======
+<<<<<<< HEAD
+    margin-left: 600px;
+=======
+    /*margin-left: 600px;*/
+>>>>>>> Darryl
+>>>>>>> linh
+  
+}
+
+.right {
+	text-align: right;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> Darryl
+>>>>>>> linh
+}
+
+.admin-center {
+	text-align: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> linh
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+.btn-size {
+  width: 26px;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Darryl
+>>>>>>> linh
+}

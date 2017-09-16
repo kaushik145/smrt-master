@@ -1,0 +1,69 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-sm-7">
+            <br>
+            <img src="./images/logo.jpg" alt="Service Request Status Tracker">
+        </div>
+        <div class="col-sm-5 title">
+            <br/><br/>
+            <h3><b>Service Maintenance Request Tracker</b></h3>
+            <p><i>by Kaushik Devulapalli</i></p>
+            
+            {{!-- <p class="right"><a href="/admin">Admin</a>  |  <a href="/usercrud">Checkout List</a>  |  <a href="/crud">Create Request<a/>  |  <a href="/checkout">Checkout Request</a></p> --}}
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="row">
+        
+        <form class="form-horizontal" action="/checkout" method="post" role="form">
+            <div class="container">
+                <div class="container col-sm-6"><br>
+                    <h2>Checkout Request</h2>
+                    <br>
+                    <div class="col-sm-12"><label>Name</label><input class="form-control" name="name" type="text" placeholder="Name"></div>
+                    <div class="col-sm-12"><label>Email</label><input class="form-control" name="email" type="email" placeholder="Email"></div>
+                    <div class="col-sm-12"><label>Apartment Number</label><input class="form-control" name="netID" type="text" placeholder="NetID"></div>
+                    <br>
+                </div>
+                <br>
+
+                <br>
+                <div class="container col-sm-6">
+                    <h5><br><br>
+                    <select name="service_name" id="services"> 
+                        {{#each services}}
+                        <option value="{{this.id}}">- {{this.service_name}}</option>
+                        {{/each}}
+                    </select>
+                    </h5>
+                    <br>
+                    <div class="col-sm-12"><label>Request Date</label><input class="form-control" name="checkout_date" type="date"></div>
+                    <div class="col-sm-12"><label>Due Date</label><input class="form-control" name="due_date" type="date"></div>
+                    <h2></h2>
+                    <BR><BR>
+                    
+                    <br>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12 admin-center">
+                        <br>
+                        <br>
+                            <button class="btn btn-success" id="form-submit" type="Submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+<BR><BR>
+<BR><BR>

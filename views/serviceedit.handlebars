@@ -1,0 +1,51 @@
+<div class="container">
+	
+	<div class="row">
+		<div class="col-sm-7">
+			<br>
+			<img src="./images/logo.jpg" alt="Service Maintenance Request Tracker">
+		</div>
+		<div class="col-sm-5 title">
+			<h3><b>Service Maintenance Request Tracker</b></h3>
+        	<p><i>by Kaushik Devulapalli</i></p>
+			<br>
+			<p class="right"><a href="/admin">Admin</a>  |  <a href="/usercrud">Activity</a>  |  <a href="/crud">Assign Request<a/>  |  
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		
+		<form action="/edit" method="POST" class="form-horizontal">
+			<div class="container">
+				<div class="container col-sm-12"><br>
+					<h2>Edit Service Request</h2>
+					<br>
+					<input class="form-control" name="id" type="hidden" value="{{this.id}}"></div>
+					<div class="col-sm-12"><label>Service Request ID</label>
+					<input class="form-control" name="service_name" type="text" value="{{this.service_name}}"></div>
+					<div class="col-sm-12"><label>Request Details</label>
+					<input class="form-control" name="request_details" type="text" value="{{this.request_details}}"></div>
+					<div class="col-sm-12"><label>Requested By</label>
+					<input class="form-control" name="request_number" type="text" value="{{this.request_number}}"></div>
+					<div class="col-sm-12"><label>Apartment Number</label>
+					<input class="form-control" name="apartment_number" type="text" value="{{this.apartment_number}}"></div>
+					<div class="col-sm-12"><label>Assigned to</label>
+					<input class="form-control" name="assigned_to" type="text" value="{{this.assigned_to}}"></div>
+
+				</div>
+				<br>
+				<div class="form-group1">
+					<div class="col-md-12 admin-center">
+						<br>
+						<br>
+						<button class="btn btn-success" type="Submit">Submit</button>
+						
+					</div>
+				</div>
+			</div>
+		</form>
+		
+	</div>
+	
+</div>
+<BR><BR>
