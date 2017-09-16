@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/kaushik145/smrt-master.git"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "Kaushik Devulapalli",
   "license": "ISC",
   "dependencies": {
