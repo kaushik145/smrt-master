@@ -4,10 +4,10 @@ var mysql = require("mysql");
 // mySQL Connectionz
 var connection = mysql.createConnection({
 	port: 3306,
-	host: "localhost",
-	user: "root",
-	password: "root",
-	database: "valetliving"
+	host: "us-cdbr-iron-east-05.cleardb.net",
+	user: "be891a228dc13f",
+	password: "d09f27e2",
+	database: "heroku_85b5b47b6dce101"
 });
 // Makes connection and outputs to CLI
 connection.connect(function(err) {
