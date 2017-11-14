@@ -1,6 +1,6 @@
 # Service Maintenance Request Tracker (SMRT) 
 
-### Description: Service Maintenance tracker enabling residential users to create service maintenance requests and admin to maintain/edit service requests created by residents.
+### Description: Service Maintenance tracker enabling residential users to create service maintenance requests and admin to maintain/edit service requests created by residents. The app is deployed on heroku on this url: https://agile-lowlands-19710.herokuapp.com/
 
 ### File Structure:
 
